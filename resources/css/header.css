@@ -1,0 +1,106 @@
+header {
+    padding: 2rem 0 1rem 0;
+}
+
+.header > .logo-wrapper > img.logo {
+    height: 4rem;
+    width: auto;
+}
+
+/* Css for link navigation */
+a.navigation-link:link,
+a.navigation-link:visited{
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.navigation-link:active,
+a.navigation-link:hover{
+    color: rgb(0, 0, 238);
+    text-decoration: underline;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+a.navigation-link.active{
+    color: rgb(40, 34, 143);;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: column;
+    }
+
+    .header > .navigation-menu {
+        display: flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header > .navigation-menu > .navigation-link{
+        padding: 1rem 0;
+    }
+
+    .header > .logo-wrapper {
+        text-align: center;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+    .header {
+        display: flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: column;
+    }
+
+    .header > .navigation-menu {
+        display: flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 0 0 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        display: flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header > .navigation-menu {
+        display: flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+}

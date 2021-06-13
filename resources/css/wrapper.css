@@ -1,0 +1,23 @@
+@media (max-width: 480px) {
+    .page--wrapper {
+        margin: 0 auto;
+        padding: 2rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1199px){
+    .page--wrapper {
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .page--wrapper {
+        padding: 0.5rem 0;
+        margin: 0 auto;
+        width: 70rem; // 1184px
+    }
+}

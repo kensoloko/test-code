@@ -1,0 +1,25 @@
+.our-partner {
+    padding: 4rem 0;
+}
+
+.list-partner > img {
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+    .list-partner {
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1199px) {
+    .list-partner {
+        margin: 2rem 0 0 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .list-partner {
+        margin: 4rem 0 0 0;
+    }
+}
