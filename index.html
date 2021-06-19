@@ -25,15 +25,15 @@
             </div>
 
             <div class="navigation-menu">
-                <a class="navigation-link active" href="index.html">Home</a>
-                <a class="navigation-link" href="about.html">About Us</a>
-                <a class="navigation-link" href="our-mission.html">Our Missions</a>
-                <a class="navigation-link" href="our-partners.html">Our Partners</a>
-                <a class="navigation-link" href="our-products.html">Our Products</a>
+                <a class="navigation-link active" href="index.html">
+                    <span>Home</span></a>
+                <a class="navigation-link d-flex" href="about.html"><span>About Us</span></a>
+                <a class="navigation-link d-flex" href="our-mission.html"><span>Our Missions</span></a>
+                <a class="navigation-link d-flex" href="our-partners.html"><span>Our Partners</span></a>
+                <a class="navigation-link d-flex" href="our-products.html"><span>Our Products</span></a>
             </div>
         </div>
     </header>
-    <hr>
 
     <div class="d-flex--column">
         <div class="introduction-info">
@@ -62,47 +62,61 @@
         </div>
 
         <div class="our-services d-flex--column">
-            <h2 class="our-services-heading">Our Services</h2>
+            <h2 class="our-services-heading">Our Products</h2>
             <p class="our-service-description">
                 Provide great software development services with the best cost effectiveness
             </p>
             <div class="list-services">
-                <div class="service-item d-flex--column">
-                    <span class="service-item-icon">
-                        <img src="./resources/images/mobile-app.svg" alt="mobile-app.svg">
-                    </span>
-                    <h3 class="service-item-heading">
-                        Mobile Apps
-                    </h3>
-                    <div class="service-item-content">
-                        Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .
+                <div class="product--item">
+                    <div class="product--name d-flex--row">
+                        <img src="./resources/images/epitool-app.jpg" alt="epitool-app.jpg">
+                        <div class="d-flex">
+                            <span>Epitools – iOS and android apps</span>
+                        </div>
                     </div>
-                    <a class="service-item-learn-more">Learn more</a>
-                </div>
-                <div class="service-item d-flex--column">
-                    <span class="service-item-icon">
-                        <img src="./resources/images/desktop-app.svg" alt="desktop-app.svg">
-                    </span>
-                    <h3 class="service-item-heading">
-                        Desktop Apps
-                    </h3>
-                    <div class="service-item-content">
-                        Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .
+                    <div class="product--description">
+                        <img src="./resources/images/epitools-app-1.png" alt="epitools-app-1.png">
                     </div>
-                    <a class="service-item-learn-more">Learn more</a>
                 </div>
-                <div class="service-item d-flex--column">
-                    <span class="service-item-icon">
-                        <img src="./resources/images/web-app.svg" alt="web-app.svg">
-                    </span>
-                    <h3 class="service-item-heading">
-                        Web Apps
-                    </h3>
-                    <div class="service-item-content">
-                        Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .
+
+                <div class="product--item">
+                    <div class="product--name d-flex--row">
+                        <img src="./resources/images/vn-empitools-app.jpg" alt="vn-empitools-app.jpg">
+                        <div class="d-flex">
+                            <span>VN Epitools – iOS and android apps</span>
+                        </div>
                     </div>
-                    <a class="service-item-learn-more">Learn more</a>
+                    <div class="product--description">
+                        <img src="./resources/images/Picture3.png" alt="Picture3.png">
+                    </div>
                 </div>
+
+                <div class="product--item">
+                    <div class="product--name d-flex--row">
+                        <img src="./resources/images/vn-empitools-app.jpg" alt="vn-empitools-app.jpg">
+                        <div class="d-flex">
+                            <span>VN Epitools - Website</span>
+                        </div>
+                    </div>
+                    <div class="product--description">
+                        <img src="./resources/images/Picture4.png" alt="Picture4.png">
+                    </div>
+                </div>
+
+                <div class="product--item">
+                    <div class="product--name d-flex--row">
+                        <img src="./resources/images/vn-empitools-app.jpg" alt="vn-empitools-app.jpg">
+                        <div class="d-flex">
+                            <span>VN Epitools -Desktop app</span>
+                        </div>
+                    </div>
+                    <div class="product--description">
+                        <img src="./resources/images/Picture5.png" alt="Picture5.png">
+                    </div>
+                </div>
+
+                <button class="btn-slide-previous" onclick="plusProductDivs(-1)">&#10095;</button>
+                <button class="btn-slide-next" onclick="plusProductDivs(1)">&#10094;</button>
             </div>
         </div>
 
@@ -223,26 +237,48 @@
 <script>
     var slideIndex = 1;
     showDivs(slideIndex);
+    var productIndex = 1;
+    showProductDivs(productIndex);
 
     function plusDivs(n) {
         showDivs(slideIndex += n);
     }
 
     function showDivs(n) {
-        console.log('trigger function');
         var i;
-        var x = document.getElementsByClassName("company--slide");
+        var x = document.getElementsByClassName('company--slide');
         if (n > x.length) {
             slideIndex = 1;
         }
         if (n < 1) {
             slideIndex = x.length;
         }
-        ;
+
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
         x[slideIndex - 1].style.display = "block";
+    }
+
+    function plusProductDivs(n) {
+        showProductDivs(productIndex += n);
+    }
+
+    function showProductDivs(n) {
+        console.log('show product div');
+        var j;
+        var y = document.getElementsByClassName('product--item');
+        if (n > y.length) {
+            productIndex = 1;
+        }
+        if (n < 1) {
+            productIndex = y.length;
+        }
+
+        for (j = 0; j < y.length; j++) {
+            y[j].style.display = "none";
+        }
+        y[productIndex - 1].style.display = "block";
     }
 </script>
 </html>

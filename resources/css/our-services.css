@@ -17,62 +17,31 @@
 }
 
 .list-services {
-    display: grid;
-    display: -moz-grid;
-    display: -ms-grid;
-    grid-template-columns: repeat(auto-fill, 22rem);
-    padding: 0 0 1rem 0;
-    grid-gap: 2rem;
+    position: relative;
 }
 
-.list-services > div {
-    padding: 2.6rem;
-    border: 1px solid rgb(229, 234, 244);
-    border-radius: 0.5rem;
-    flex: 30%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+.product--name {
+    font-size: 2rem;
+    padding: 0 0 2rem 0;
 }
 
-.list-services > .service-item > .service-item-icon {
-    width: 4rem;
-    height: 4rem;
-    margin: 0.5rem 0 0.5rem 0;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(65, 155, 249);
-    border-radius: 0.25rem;
-    background-color: rgb(239, 238, 243);
-    cursor: pointer;
+.product--name > img {
+    height: 3rem;
+    width: auto;
 }
 
-.service-item-heading {
-    color: rgb(22, 19, 62);
-    font-size: 1.5rem;
-    line-height: 3.25rem;
+.product--name > div > span {
+    padding: 0 0 0 1rem;
+    align-self: flex-end;
 }
 
-.service-item-content {
-    color: rgb(41, 52, 120);
-    line-height: 1.5rem;
-}
-
-a.service-item-learn-more,
-a.service-item-learn-more:link,
-a.service-item-learn-more:visited {
-    color: rgb(52, 170, 221);
-    line-height: 3.25rem;
-    cursor: pointer;
+.product--description > img {
+    width: 100%;
 }
 
 @media (max-width: 480px) {
     .list-services {
         margin-top: 1rem;
-        display: flex;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -moz-flex;
-        display: -webkit-flex;
-        flex-direction: column;
     }
 
     .list-services > div {

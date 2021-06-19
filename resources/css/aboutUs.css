@@ -1,0 +1,54 @@
+.about--us {
+    padding: 3rem 0;
+}
+
+.about--us--description {
+    padding: 2rem 2rem 2rem 3rem;
+}
+
+.about--us--description > h1 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: #F2F2F2;
+}
+
+.about--us--intro {
+    color: #ffffff;
+    padding: 1rem;
+    background-color: black;
+}
+
+.about--us--details {
+    padding: 1rem;
+    font-size: 1.125rem;
+    background-color: #F2F2F2;
+}
+
+.blue-border {
+    width: 40%;
+    height: 0.6rem;
+    background-color: #25C6E3;
+}
+
+@media (max-width: 480px) {
+    .about--us {
+        display: flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 481px) {
+    .about--us {
+        display: flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -moz-flex;
+        display: -webkit-flex;
+        flex-direction: row;
+    }
+}

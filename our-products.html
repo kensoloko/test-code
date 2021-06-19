@@ -33,51 +33,64 @@
             </div>
         </div>
     </header>
-    <hr>
 
     <div class="d-flex--column">
         <div class="our-services d-flex--column">
-            <h2 class="our-services-heading">Our Services</h2>
+            <h2 class="our-services-heading">Our Products</h2>
             <p class="our-service-description">
                 Provide great software development services with the best cost effectiveness
             </p>
             <div class="list-services">
-                <div class="service-item d-flex--column">
-                    <span class="service-item-icon">
-                        <img src="./resources/images/mobile-app.svg" alt="mobile-app.svg">
-                    </span>
-                    <h3 class="service-item-heading">
-                        Mobile Apps
-                    </h3>
-                    <div class="service-item-content">
-                        Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .
+                <div class="product--item">
+                    <div class="product--name d-flex--row">
+                        <img src="./resources/images/epitool-app.jpg" alt="epitool-app.jpg">
+                        <div class="d-flex">
+                            <span>Epitools – iOS and android apps</span>
+                        </div>
                     </div>
-                    <a class="service-item-learn-more">Learn more</a>
-                </div>
-                <div class="service-item d-flex--column">
-                    <span class="service-item-icon">
-                        <img src="./resources/images/desktop-app.svg" alt="desktop-app.svg">
-                    </span>
-                    <h3 class="service-item-heading">
-                        Desktop Apps
-                    </h3>
-                    <div class="service-item-content">
-                        Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .
+                    <div class="product--description">
+                        <img src="./resources/images/epitools-app-1.png" alt="epitools-app-1.png">
                     </div>
-                    <a class="service-item-learn-more">Learn more</a>
                 </div>
-                <div class="service-item d-flex--column">
-                    <span class="service-item-icon">
-                        <img src="./resources/images/web-app.svg" alt="web-app.svg">
-                    </span>
-                    <h3 class="service-item-heading">
-                        Web Apps
-                    </h3>
-                    <div class="service-item-content">
-                        Lorem ipsum dolor sit amet, coectetur adipiscing elit. Suspendisse varius enim in eros .
+
+                <div class="product--item">
+                    <div class="product--name d-flex--row">
+                        <img src="./resources/images/vn-empitools-app.jpg" alt="vn-empitools-app.jpg">
+                        <div class="d-flex">
+                            <span>VN Epitools – iOS and android apps</span>
+                        </div>
                     </div>
-                    <a class="service-item-learn-more">Learn more</a>
+                    <div class="product--description">
+                        <img src="./resources/images/Picture3.png" alt="Picture3.png">
+                    </div>
                 </div>
+
+                <div class="product--item">
+                    <div class="product--name d-flex--row">
+                        <img src="./resources/images/vn-empitools-app.jpg" alt="vn-empitools-app.jpg">
+                        <div class="d-flex">
+                            <span>VN Epitools - Website</span>
+                        </div>
+                    </div>
+                    <div class="product--description">
+                        <img src="./resources/images/Picture4.png" alt="Picture4.png">
+                    </div>
+                </div>
+
+                <div class="product--item">
+                    <div class="product--name d-flex--row">
+                        <img src="./resources/images/vn-empitools-app.jpg" alt="vn-empitools-app.jpg">
+                        <div class="d-flex">
+                            <span>VN Epitools -Desktop app</span>
+                        </div>
+                    </div>
+                    <div class="product--description">
+                        <img src="./resources/images/Picture5.png" alt="Picture5.png">
+                    </div>
+                </div>
+
+                <button class="btn-slide-previous" onclick="plusDivs(-1, 'product--item')">&#10095;</button>
+                <button class="btn-slide-next" onclick="plusDivs(1, 'product--item')">&#10094;</button>
             </div>
         </div>
     </div>
@@ -153,4 +166,28 @@
     </div>
 </footer>
 </body>
+<script>
+    var productIndex = 1;
+    showDivs(productIndex, 'product--item');
+
+    function plusDivs(n, className) {
+        showDivs(productIndex += n, className);
+    }
+
+    function showDivs(n, className) {
+        var i;
+        var x = document.getElementsByClassName(className);
+        if (n > x.length) {
+            productIndex = 1;
+        }
+        if (n < 1) {
+            productIndex = x.length;
+        }
+
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[productIndex - 1].style.display = "block";
+    }
+</script>
 </html>
