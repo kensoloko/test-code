@@ -2,9 +2,10 @@
     padding: 3rem 0;
 }
 
-.about--us--description {
-    padding: 2rem 2rem 2rem 3rem;
+.about--us--img {
+    width: 100%;
 }
+
 
 .about--us--description > h1 {
     font-size: 3.8rem;
@@ -31,7 +32,7 @@
     background-color: #25C6E3;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1023px) {
     .about--us {
         display: flex;
         display: -moz-box;
@@ -39,10 +40,20 @@
         display: -moz-flex;
         display: -webkit-flex;
         flex-direction: column;
+        margin: 0 auto;
     }
+
+    .about--us > div{
+        width: 100%;
+    }
+
+    .about--us--description {
+        padding: 1rem 0 0 0;
+    }
+
 }
 
-@media (min-width: 481px) {
+@media (min-width: 1024px) {
     .about--us {
         display: flex;
         display: -moz-box;
@@ -51,4 +62,13 @@
         display: -webkit-flex;
         flex-direction: row;
     }
+
+    .about--us > div {
+        width: 50%;
+    }
+
+    .about--us--description {
+        padding: 2rem 2rem 2rem 3rem;
+    }
+
 }
