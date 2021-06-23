@@ -1,0 +1,33 @@
+.contact-us--page {
+    padding: 3rem 0 2rem 0;
+    position: relative;
+}
+
+.contact-us--info {
+    position: absolute;
+    top: 40%;
+    right: 10%;
+}
+
+.contact-us--heading {
+    background-color: #fff;
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-us--item-info {
+    color: white;
+    background-color: black;
+    font-size: 1.5rem;
+    padding: 0.25rem 0;
+}
+
+
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 481px) {
+
+}

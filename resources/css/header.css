@@ -4,7 +4,7 @@ header {
 }
 
 .header > .logo-wrapper > img.logo {
-    height: 6rem;
+    height: 5rem;
     width: auto;
 }
 
@@ -31,6 +31,7 @@ a.navigation-link:visited,
 a.navigation-link:active,
 a.navigation-link:hover > span {
     align-self: flex-end;
+    text-transform: uppercase;
 }
 
 a.navigation-link.active{
@@ -39,7 +40,7 @@ a.navigation-link.active{
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1023px) {
     .header {
         display: flex;
         display: -moz-box;
@@ -68,7 +69,7 @@ a.navigation-link.active{
     }
 }
 
-@media (min-width: 601px) and (max-width: 1023px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
     .header {
         display: flex;
         display: -moz-box;
@@ -90,7 +91,7 @@ a.navigation-link.active{
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .header {
         display: flex;
         display: -moz-box;
@@ -109,7 +110,7 @@ a.navigation-link.active{
         display: -webkit-flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 
 }

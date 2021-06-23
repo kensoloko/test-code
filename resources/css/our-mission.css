@@ -1,5 +1,5 @@
 .our-mission {
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
 
 .mission-img-container {
@@ -52,7 +52,7 @@
 
 @media (min-width: 1200px) {
     .list-mission {
-        margin-top: 4rem;
+        margin-top: 1rem;
         display: flex;
         display: -moz-box;
         display: -ms-flexbox;
