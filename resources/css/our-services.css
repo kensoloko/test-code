@@ -69,6 +69,11 @@
     line-height: 1.2rem;
 }
 
+.item-logo--image {
+    width: 4rem;
+    padding: 0.5rem 1rem 0 0;
+}
+
 @media (max-width: 480px) {
     .list-services {
         margin-top: 1rem;
