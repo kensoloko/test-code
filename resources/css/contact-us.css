@@ -1,5 +1,5 @@
 .contact-us--page {
-    padding: 3rem 0 2rem 0;
+    padding: 5rem 0;
     position: relative;
 }
 
@@ -25,9 +25,19 @@
 
 
 @media (max-width: 480px) {
-
+    .contact-us--info--image {
+        width: 100px;
+    }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 481px) and (max-width: 1023px) {
+    .contact-us--info--image {
+        width: 200px;
+    }
+}
 
+@media (min-width: 1024px) {
+    .contact-us--info--image {
+        width: 300px;
+    }
 }

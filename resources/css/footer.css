@@ -89,6 +89,10 @@ footer {
         margin-top: 2rem;
     }
 
+    .logo-footer-content {
+        width: 90%;
+    }
+
 }
 
 @media (min-width: 551px) and (max-width: 1024px) {
