@@ -57,7 +57,7 @@ button.btn-white {
 .btn-slide-next {
     position: absolute;
     top: 50%;
-    left: 0;
+    right: 0;
     transform: translate(0%, -50%);
     -ms-transform: translate(-0%, -50%)
 }
@@ -65,7 +65,7 @@ button.btn-white {
 .btn-slide-previous {
     position: absolute;
     top: 50%;
-    right: 0;
+    left: 0;
     transform: translate(0%, -50%);
     -ms-transform: translate(-0%, -50%)
 }
@@ -92,13 +92,13 @@ button.btn-white {
 .btn-slide-1-next {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
 }
 
 .btn-slide-1-previous {
     position: absolute;
     bottom: 0;
-    right: 0;
+    left: 0;
 }
 
 .btn-slide-1-next:hover,
